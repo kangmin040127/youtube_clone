@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>Youtube</title>
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__title">
+            <i class="fa-solid fa-bars "></i>
+            <img src="data:image/png;base64,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"/>
+        </div>
+        <div class="nav__search">
+            <input type="text" placeholder="검색">
+            <button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+        </div>
+        <div class="nav__icons">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+            <img src="https://img.insight.co.kr/static/2019/12/16/700/85j5750m4085qpbsu46p.jpg"/>
+        </div>
+    </header>
+
+    <main class="l-n-r-side">
+
+        <div class="l-n-r-side__left-side">
+            <div class="l-n-r-side__left-side__top">
+                <div class="l-n-r-side__left-side__top-video">
+                    <img src="https://mobiinsidecontent.s3.ap-northeast-2.amazonaws.com/kr/wp-content/uploads/2019/10/22131324/GettyImages-1139355221-e1571717659197.jpg"/>
+                </div>
+                <div class="l-n-r-side__left-side__top-video-title">
+                    [5시간]암기 잘되는 음악 | 암기 효율 299% | 외우지 않아도 암기 | ASMR | 백색소음 ★ 공신 강성태
+                </div>
+                <div class="l-n-r-side__left-side__top-imfo">
+                    <div>조회수 4,605,996회...</div>
+                    <div class="l-n-r-side__left-side__top-imfo2">
+                        <div class="l-n-r-side__left-side__top-imfo2__icons"><i class="fa-solid fa-thumbs-up"></i> 좋아요</div>
+                        <div class="l-n-r-side__left-side__top-imfo2__icons"><i class="fa-solid fa-thumbs-down"></i>싫어요</div>
+                        <div class="l-n-r-side__left-side__top-imfo2__icons"><i class="fa-solid fa-share"></i>공유</div>
+                        <div class="l-n-r-side__left-side__top-imfo2__icons"><i class="fa-solid fa-download"></i>저장</div>
+                        <div class="l-n-r-side__left-side__top-imfo2__icons"><i class="fa-solid fa-bars "></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="l-n-r-side__left-side__profile">
+                <div class="l-n-r-side__left-side__profile-header">
+                    <div class="l-n-r-side__left-side__profile-header2">
+                       <div class="l-n-r-side__left-side__profile-header__photo">
+                            <img src="data:image/jpeg;base64,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"/>
+                        </div>
+                        <div class="l-n-r-side__left-side__profile-header__imfo">
+                            <div class="l-n-r-side__left-side__profile-header__imfo-name">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i></div>
+                            <div class="l-n-r-side__left-side__profile-header__imfo-sub">구독자 123.1만명</div>
+                        </div> 
+                    </div>
+                    <button class="l-n-r-side__left-side__profile-header__sub-button">구독</button>
+                </div>
+                <div class="l-n-r-side__left-side__profile__ment">
+                    💖공부 방법이 고민이신 분들은 학습진단을 무료로 해드립니다.
+                    &nbsp;&nbsp;&nbsp;&nbsp;▶ https://bit.ly/2JH0yM7 💖
+                     <div class="l-n-r-side__left-side__profile__ment-seemore">더보기</div>
+                </div>
+            </div>
+
+            <div class="l-n-r-side__left-side__coment-many-align">
+                <div class="l-n-r-side__left-side__coment-many">댓글 11,245개</div>
+                <div class="l-n-r-side__left-side__align"><i class="fa-solid fa-align-center"></i>&nbsp;&nbsp;정렬 기준</div>
+            </div>
+
+            <div class="own-profile">
+                <img src="https://opgg-com-image.akamaized.net/attach/images/20211119095453.2112011.jpg"/>
+                <input type="text" placeholder="댓글 추가..." class="own-profile__comnet">
+            </div>
+            <div class="cancel-submit">
+                <button>취소</button>
+                <button>작성</button>
+            </div>
+
+            <div class="no-comment">댓글이 없습니다.</div>
+        </div>
+
+
+        <div class="l-n-r-side__right-side">
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="C:\Users\김강민\Desktop\html, css\youtube_clone\KakaoTalk_20220523_175459713.png"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://i.ytimg.com/vi/CLn8rwBxGC4/maxresdefault.jpg"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[기말고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://t1.daumcdn.net/cfile/tistory/990289355C57192117"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://newsimg.sedaily.com/2021/12/04/22V5VJTA23_1.png"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://i.ytimg.com/vi/Kt2MCPCsHCo/maxresdefault.jpg"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="data:image/jpeg;base64,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"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://blog.kakaocdn.net/dn/m07x9/btqSLGu0ccF/WuCwiJPrNKx9IB3xpER7C1/img.png"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://i.pinimg.com/736x/61/95/7f/61957f72ab8d7af7b27e587ec7b42fb7.jpg"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://images.wondershare.kr/filmora/images/2021-images/seo/free-thumbnail-creation9.png"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyaZVWjrMQ4wXHWBDWgT9vI6hM2L9PMszfiw&usqp=CAU"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://img.taling.me/Content/Uploads/Curri/f160da854bda2b339b3bb98f44be29407378d49b.png"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://www.mangoboard.net/bbs/attachments/1298"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://markettraders.kr/wp-content/uploads/2020/09/hq720-696x392.jpg"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>  
+            <div class="l-n-r-side__right-side__vedio-ment">
+                <img src="https://cdn.imweb.me/upload/S202101088842424c7743b/4df9b0942ae5d.png"/>
+                <div class="l-n-r-side__right-side__ment">
+                    <div>[중간고사 필수]밤에 공부할 때<br>집중력 향상 시켜주는 ASMR |...</div>
+                    <div id="small-info">공부의신 김강민 <i class="fa-solid fa-circle-check fa-sm"></i><br>
+                    조회수 18.6만회 · 1년전
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        
+
+    </main>
+</body>
+    <script 
+    src="https://kit.fontawesome.com/c5c6a57a0c.js" 
+    crossorigin="anonymous"
+    ></script>
+</html>
+
